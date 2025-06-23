@@ -10,7 +10,40 @@
             padding: 0;
             box-sizing: border-box;
         }
-	
+
+	    /* Linkedin Section */	
+.linkedin-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.linkedin-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    background-color: #0077b5; /* LinkedIn blue background */
+    color: white;              /* White text */
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.linkedin-card:hover {
+    background-color: #005f95;
+    transform: translateY(-3px);
+}
+
+.linkedin-icon {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1); /* ✅ Turns icon white */
+}
+
+	    
 	/* Footer Section */
 	    .site-footer {
     text-align: center;
@@ -1021,6 +1054,15 @@ object-position: center top;
             typeWriter();
         }, 1000);
     </script>
+
+	<!-- LinkedIn Card -->
+<div class="linkedin-wrapper">
+  <a href="https://www.linkedin.com/in/boosithcr" target="_blank" class="linkedin-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-icon" />
+    <span>Connect with me on LinkedIn</span>
+  </a>
+</div>
+	
 	<footer style="text-align: center; padding: 1rem 0; background-color: #f1f5f9; color: #555; font-size: 0.9rem;">
     &copy; 2025 Boosith C R. All rights reserved.
 </footer>
